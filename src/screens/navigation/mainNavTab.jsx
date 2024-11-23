@@ -1,8 +1,10 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { TabBarVisibilityContext,TabBarVisibilityProvider } from '../../../contexts/TabBarVisibilityContext';
+import { TabBarVisibilityContext,TabBarVisibilityProvider } from '../../contexts/TabBarVisibilityContext';
 import MainNavStructure from './mainNavStructure';
+import Home from '../main/home/home';
+import Profile from '../main/profile/profile';
 
 
 const Tab = createBottomTabNavigator();

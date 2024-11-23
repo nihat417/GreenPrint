@@ -1,9 +1,9 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet } from 'react-native';
 import React from 'react';
-import { StyledView, StyledButton, TabHomeSvg, TabProfileSvg, StyledText } from '../../../common/StyledComponents';
+import { StyledView, StyledButton, TabHomeSvg, TabProfileSvg, StyledText } from '../../common/StyledComponents';
 
 const MainNavStructure = ({ state, navigation }) => {
-    const getIconColor = (index) => (state.index === index ? '#0066FF' : '#8B8B94');
+    const getIconColor = (index) => (state.index === index ? '#0F853B' : '#000');
 
     return (
         <StyledView style={styles.container}>
@@ -12,8 +12,8 @@ const MainNavStructure = ({ state, navigation }) => {
                 <StyledText style={[styles.label, { color: getIconColor(0) }]}>Home</StyledText>
             </StyledButton>
             <StyledButton onPress={() => navigation.navigate('Profile', { screen: 'ProfilePage' })} style={styles.button}>
-                <TabProfileSvg color={getIconColor(3)} />
-                <StyledText style={[styles.label, { color: getIconColor(3) }]}>Settings</StyledText>
+                <TabProfileSvg color={getIconColor(1)} />
+                <StyledText style={[styles.label, { color: getIconColor(1) }]}>Settings</StyledText>
             </StyledButton>
         </StyledView>
     );
@@ -21,7 +21,7 @@ const MainNavStructure = ({ state, navigation }) => {
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: '#0F853B',
+        backgroundColor: '#FFF',
         position: 'absolute',
         bottom: 0,
         width: '100%',

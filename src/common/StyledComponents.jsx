@@ -9,6 +9,13 @@ import EyeOffSvg from "../assets/svg/authSvg/EyeOffSvg";
 import EyeOnSvg from "../assets/svg/authSvg/EyeOnSvg";
 
 
+//main
+import TabHomeSvg from "../assets/svg/mainSvg/TabHomeSvg";
+import TabProfileSvg from "../assets/svg/mainSvg/TabProfileSvg";
+
+
+
+
 export const StyledView = styled(View);
 export const StyledText = styled(Text);
 export const StyledInput = styled(TextInput);
@@ -17,5 +24,5 @@ export const StyledScrollView = styled(ScrollView);
 export const StyledImage = styled(Image);
 
 export{
-    Vector1Svg,Vector2Svg,Vector3Svg,EyeOnSvg,EyeOffSvg
+    Vector1Svg,Vector2Svg,Vector3Svg,EyeOnSvg,EyeOffSvg,TabProfileSvg,TabHomeSvg
 }
