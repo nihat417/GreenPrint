@@ -1,8 +1,10 @@
 import React from 'react';
 import { StyleSheet,Dimensions  } from 'react-native';
 import { StyledButton, StyledImage, StyledInput, StyledText, StyledView, Vector1Svg, Vector2Svg } from '../../common/StyledComponents';
+import { useNavigation } from '@react-navigation/native';
 
 const Login = () => {
+    const navigation = useNavigation();
     const screenWidth = Dimensions.get('window').width;
 
   return (
@@ -43,7 +45,7 @@ const Login = () => {
           </StyledButton>
         </StyledView>
 
-        <StyledButton className='mt-[10px]'>
+        <StyledButton className='mt-[10px]' onPress={()=>navigation.navigate("RegisterPage")}>
           <StyledText className='text-[#898989] text-[20px] text-center'>Register</StyledText>
         </StyledButton>
 

@@ -4,6 +4,7 @@ import { styled } from "nativewind";
 //auth
 import Vector1Svg from "../assets/svg/authSvg/Vector1Svg";
 import Vector2Svg from "../assets/svg/authSvg/Vector2Svg";
+import Vector3Svg from "../assets/svg/authSvg/Vector3Svg";
 
 
 export const StyledView = styled(View);
@@ -14,5 +15,5 @@ export const StyledScrollView = styled(ScrollView);
 export const StyledImage = styled(Image);
 
 export{
-    Vector1Svg,Vector2Svg
+    Vector1Svg,Vector2Svg,Vector3Svg
 }
