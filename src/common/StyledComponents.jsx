@@ -12,6 +12,11 @@ import EyeOnSvg from "../assets/svg/authSvg/EyeOnSvg";
 //main
 import TabHomeSvg from "../assets/svg/mainSvg/TabHomeSvg";
 import TabProfileSvg from "../assets/svg/mainSvg/TabProfileSvg";
+import LeftArrowSvg from "../assets/svg/mainSvg/LeftArrowSvg";
+import DontSeeElm from "../assets/svg/mainSvg/DontSeeElm";
+import EmitionHistory from "../assets/svg/mainSvg/EmitionHistory";
+import ExitSvg from "../assets/svg/mainSvg/ExitSvg";
+import SuggestionsSvg from "../assets/svg/mainSvg/SuggestionsSvg";
 
 
 
@@ -24,5 +29,5 @@ export const StyledScrollView = styled(ScrollView);
 export const StyledImage = styled(Image);
 
 export{
-    Vector1Svg,Vector2Svg,Vector3Svg,EyeOnSvg,EyeOffSvg,TabProfileSvg,TabHomeSvg
+    Vector1Svg,Vector2Svg,Vector3Svg,EyeOnSvg,SuggestionsSvg,EyeOffSvg,TabProfileSvg,TabHomeSvg,LeftArrowSvg,DontSeeElm,ExitSvg,EmitionHistory
 }
