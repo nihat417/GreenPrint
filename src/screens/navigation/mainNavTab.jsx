@@ -7,6 +7,9 @@ import Home from '../main/home/home';
 import Profile from '../main/profile/profile';
 import { StatusBar } from 'react-native';
 import CalculateEmision from '../main/home/calculateEmision';
+import Sugesstions from '../main/profile/sugesstions';
+import { EmitionHistory } from '../../common/StyledComponents';
+import Emitionhistory from '../main/profile/emitionhistory';
 
 
 const Tab = createBottomTabNavigator();
@@ -27,6 +30,8 @@ const MyProfileStack = () =>{
     return(
         <ProfileStack.Navigator>
             <ProfileStack.Screen options={{headerShown:false}} name="ProfilePage" component={Profile}/>
+            <ProfileStack.Screen options={{headerShown:false}} name="SugesstionsPage" component={Sugesstions}/>
+            <ProfileStack.Screen options={{headerShown:false}} name="EmitionHistoryPage" component={Emitionhistory}/>
         </ProfileStack.Navigator>
     )
 };
