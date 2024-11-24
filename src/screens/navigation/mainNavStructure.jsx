@@ -13,7 +13,7 @@ const MainNavStructure = ({ state, navigation }) => {
             </StyledButton>
             <StyledButton onPress={() => navigation.navigate('Profile', { screen: 'ProfilePage' })} style={styles.button}>
                 <TabProfileSvg color={getIconColor(1)} />
-                <StyledText style={[styles.label, { color: getIconColor(1) }]}>Settings</StyledText>
+                <StyledText style={[styles.label, { color: getIconColor(1) }]}>Profile</StyledText>
             </StyledButton>
         </StyledView>
     );

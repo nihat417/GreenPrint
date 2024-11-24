@@ -5,6 +5,8 @@ import { TabBarVisibilityContext,TabBarVisibilityProvider } from '../../contexts
 import MainNavStructure from './mainNavStructure';
 import Home from '../main/home/home';
 import Profile from '../main/profile/profile';
+import { StatusBar } from 'react-native';
+import CalculateEmision from '../main/home/calculateEmision';
 
 
 const Tab = createBottomTabNavigator();
@@ -15,6 +17,7 @@ const MyHomeStack = () =>{
     return (
         <HomeStack.Navigator initialRouteName='HomePage'>
             <HomeStack.Screen options={{headerShown: false}} name="HomePage" component={Home}/>
+            <HomeStack.Screen options={{headerShown: false}} name="CalculatePage" component={CalculateEmision}/>
         </HomeStack.Navigator>
     );
 };
@@ -35,6 +38,7 @@ const MainNavTab = () => {
             <TabBarVisibilityContext.Consumer>
                 {({isTabBarVisible})=>(
                     <NavigationContainer>
+                        <StatusBar backgroundColor='#fff' barStyle={'dark-content'}/>
                         <Tab.Navigator initialRouteName="Home" screenOptions={{headerShown: false}}
                         tabBar={props => isTabBarVisible ? <MainNavStructure {...props} /> : null}>
                             <Tab.Screen name="Home" component={MyHomeStack}/>
